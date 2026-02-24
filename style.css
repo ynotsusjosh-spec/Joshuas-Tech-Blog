@@ -1,0 +1,51 @@
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+button {
+  padding: 8px 12px;
+  margin: 10px;
+  cursor: pointer;
+}
+/* Dark mode styles for container and links */
+body.dark-mode .container {
+  background-color: #1e1e1e; /* dark container */
+  color: #f0f0f0;            /* light text */
+}
+
+body.dark-mode a {
+  color: #66aaff;            /* links are visible */
+}
+body.dark-mode button {
+  background-color: #3399ff;
+  color: white;
+}
+/* Dark mode heading style */
+body.dark-mode h1 {
+  color: #ffffff;      /* bright white for clear contrast */
+  text-shadow: 1px 1px 2px #000000; /* optional subtle shadow for pop */
+}
